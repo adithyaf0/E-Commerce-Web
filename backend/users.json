@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "1777988305665",
+      "name": "UMA SRI ADITHYA JALADI",
+      "email": "umasriadithya@gmail.com",
+      "password": "Adithya@5"
+    },
+    {
+      "id": "1777990111048",
+      "name": "Dinesh Nigidi",
+      "email": "dinesh@gmail.com",
+      "password": "Dinesh@5"
+    },
+    {
+      "id": "1777994085499",
+      "name": "Surya",
+      "email": "surya@gmail.com",
+      "password": "surya@5"
+    }
+  ]
+}
