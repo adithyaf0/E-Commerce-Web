@@ -1,10 +1,9 @@
 {
-  "name": "ecommerce-web",
   "private": true,
   "scripts": {
     "start": "cd frontend && npm start",
     "frontend": "cd frontend && npm start",
     "backend": "cd backend && npm start",
-    "build": "cd frontend && npm install && npm run build"
+    "build": "cd frontend && npm run build"
   }
 }
