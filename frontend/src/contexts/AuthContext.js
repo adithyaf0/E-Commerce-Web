@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from 'react';
 const AuthContext = createContext();
 
 const USER_KEY = 'ecom_user';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'https://e-commerce-web-1-m9a4.onrender.com';
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
@@ -31,7 +32,7 @@ export function AuthProvider({ children }) {
   };
 
   const login = async (email, password) => {
-    const response = await fetch('/api/login', {
+    const response = await fetch(`${API_BASE_URL}/api/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
@@ -47,7 +48,7 @@ export function AuthProvider({ children }) {
   };
 
   const register = async (name, email, password) => {
-    const response = await fetch('/api/register', {
+    const response = await fetch(`${API_BASE_URL}/api/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, password }),
